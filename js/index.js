@@ -49,15 +49,15 @@ images[0].addEventListener('mouseup', event => {
 });
 
 images[1].addEventListener('mouseup', event => {
-  images[1].src = 'https://www.placecage.com/376/282';
+  images[1].src = 'https://www.placecage.com/373/282';
 });
 
 images[2].addEventListener('mouseup', event => {
-  images[2].src = 'https://www.placecage.com/375/282';
+  images[2].src = 'https://www.placecage.com/374/281';
 });
 
 images[3].addEventListener('mouseup', event => {
-  images[3].src = 'https://www.placecage.com/600/200';
+  images[3].src = 'https://www.placecage.com/600/199';
 });
 
 // Click for original images
@@ -74,9 +74,9 @@ buttons[1].addEventListener('click', event => {
   images[2].src = 'https://www.fillmurray.com/375/282';
   images[3].src = 'https://www.fillmurray.com/599/200';
 });
-buttons[2].addEventListener('click', event => {
+buttons[2].addEventListener('click', () => {
   images[0].src = 'https://www.placecage.com/800/240';
-  images[1].src = 'https://www.placecage.com/376/282';
-  images[2].src = 'https://www.placecage.com/375/282';
-  images[3].src = 'https://www.placecage.com/600/200';
+  images[1].src = 'https://www.placecage.com/373/282';
+  images[2].src = 'https://www.placecage.com/374/281';
+  images[3].src = 'https://www.placecage.com/600/199';
 });

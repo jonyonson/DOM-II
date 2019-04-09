@@ -26,37 +26,37 @@ closeMenu.addEventListener('click', () => {
   contextMenu.style.display = 'none';
 });
 
-// double click to change image src to Bill Murray images
-images[0].addEventListener('dblclick', event => {
+// double click to change the image src to Nick Cage images
+images[0].addEventListener('click', event => {
   images[0].src = 'https://www.fillmurray.com/800/240';
 });
 
-images[1].addEventListener('dblclick', event => {
+images[1].addEventListener('click', event => {
   images[1].src = 'https://www.fillmurray.com/376/282';
 });
 
-images[2].addEventListener('dblclick', event => {
+images[2].addEventListener('click', event => {
   images[2].src = 'https://www.fillmurray.com/375/282';
 });
 
-images[3].addEventListener('dblclick', event => {
+images[3].addEventListener('click', event => {
   images[3].src = 'https://www.fillmurray.com/599/200';
 });
 
-// mouse click to change the image src to Nick Cage images
-images[0].addEventListener('mouseup', event => {
+// mouse click to change image src to Bill Murray images
+images[0].addEventListener('dblclick', event => {
   images[0].src = 'https://www.placecage.com/800/240';
 });
 
-images[1].addEventListener('mouseup', event => {
+images[1].addEventListener('dblclick', event => {
   images[1].src = 'https://www.placecage.com/373/282';
 });
 
-images[2].addEventListener('mouseup', event => {
+images[2].addEventListener('dblclick', event => {
   images[2].src = 'https://www.placecage.com/374/281';
 });
 
-images[3].addEventListener('mouseup', event => {
+images[3].addEventListener('dblclick', event => {
   images[3].src = 'https://www.placecage.com/600/199';
 });
 

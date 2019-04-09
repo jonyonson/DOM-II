@@ -6,14 +6,14 @@ const contextMenu = document.querySelector('.contextmenu');
 const closeMenu = document.querySelector('.close');
 const buttons = document.querySelectorAll('.btn');
 
-// Prevent Nav links from loading new page
+// prevent nav links from loading new page
 navItems.forEach(item => {
   item.addEventListener('click', event => {
     event.preventDefault();
   });
 });
 
-// Hijack the right click
+// hijack the right click
 window.addEventListener('contextmenu', event => {
   event.preventDefault();
   contextMenu.style.display = 'flex';
@@ -21,12 +21,12 @@ window.addEventListener('contextmenu', event => {
   contextMenu.style.left = event.clientX + 'px';
 });
 
-// to close the context menu
+// closes the context menu
 closeMenu.addEventListener('click', () => {
   contextMenu.style.display = 'none';
 });
 
-// Double Click images to change the src to Bi
+// double click to change image src to Bill Murray images
 images[0].addEventListener('dblclick', event => {
   images[0].src = 'https://www.fillmurray.com/800/240';
 });
@@ -43,7 +43,7 @@ images[3].addEventListener('dblclick', event => {
   images[3].src = 'https://www.fillmurray.com/599/200';
 });
 
-// Mouse click to change the image src
+// mouse click to change the image src to Nick Cage images
 images[0].addEventListener('mouseup', event => {
   images[0].src = 'https://www.placecage.com/800/240';
 });
@@ -60,7 +60,7 @@ images[3].addEventListener('mouseup', event => {
   images[3].src = 'https://www.placecage.com/600/199';
 });
 
-// Click for original images
+// click for original images
 buttons[0].addEventListener('click', event => {
   images[0].src = 'img/fun-bus.jpg';
   images[1].src = 'img/adventure.jpg';
@@ -68,12 +68,15 @@ buttons[0].addEventListener('click', event => {
   images[3].src = 'img/destination.jpg';
 });
 
+// click for Bill Murray images
 buttons[1].addEventListener('click', event => {
   images[0].src = 'https://www.fillmurray.com/800/240';
   images[1].src = 'https://www.fillmurray.com/376/282';
   images[2].src = 'https://www.fillmurray.com/375/282';
   images[3].src = 'https://www.fillmurray.com/599/200';
 });
+
+// click for Nick Cage images
 buttons[2].addEventListener('click', () => {
   images[0].src = 'https://www.placecage.com/800/240';
   images[1].src = 'https://www.placecage.com/373/282';
